@@ -4,12 +4,8 @@
 let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 let lls = [
-	// '104.16.236.187',
-	// '104.16.66.9',
-	// '104.16.6.27',
-	// '162.159.134.86'
-	'67.198.228.238',
-	'138.2.112.136'
+	'172.67.73.95',
+	'162.159.130.154'
 ].map(i => i + '#lls-优选')
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
@@ -645,7 +641,7 @@ export default {
 				if(proxyhosts && (host.includes('.workers.dev') || host.includes('pages.dev'))) {
 					最终路径 = `/${host}${path}`;
 					伪装域名 = proxyhosts[Math.floor(Math.random() * proxyhosts.length)];
-					节点备注 = `${EndPS} 已启用临时域名中转，请尽快绑定自定义域！`;
+					节点备注 = `${EndPS} 临时域名中转，尽快绑定自定义域！`;
 					sni = 伪装域名;
 				}
 
