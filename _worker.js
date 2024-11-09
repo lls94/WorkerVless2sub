@@ -5,13 +5,13 @@ let mytoken = ['auto'];//快速订阅访问入口, 留空则不启动快速订�
 
 let lls = [
 	// 填写优选ip
-	"104.19.251.49",
-].map(i => i + '#lls-优选')
+	"104.26.0.177",
+].map(i => i + '#ip优选')
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	// 'icook.tw:2053#官方优选域名',
-	// 'cloudflare.cfgo.cc#优选官方线路',
+	'icook.tw:2053#官方优选域名',
+	'cloudflare.cfgo.cc#优选官方线路',
 ].concat(lls);
 
 // 设置优选地址api接口
