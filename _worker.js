@@ -5,7 +5,11 @@ let mytoken = ['auto'];//快速订阅访问入口, 留空则不启动快速订�
 
 let lls = [
 	// 填写优选ip
+	"cf.090227.xyz",
 	"time.is",
+	"www.shopify.com",
+	"www.digitalocean.com",
+	"www.gov.ua"
 ].map(i => i + '#lls-优选')
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
